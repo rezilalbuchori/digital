@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Era Digital</title>
+	<link rel="stylesheet" href="/eradigital/style.css" type="text/css">
+	<link rel="stylesheet" href="/eradigital/bootstrap.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/PortofolioRezil.html#hubungi">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://www.instagram.com/0c_o1x?igsh=MTV4bDBiZnh0aWFyMw==" target="_blank">instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/eradigital/Digital Biru.jpg" class="full-width-image" alt="Dashboard App UX Design Project">
+			<h1 class="project-title">Melangkah Bersama Teknologi<br></h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="/PortofolioRezil.html">Home</a> / <a href="eradigital.html">Melangkah Bersama Teknologi </a>
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Menyambut Perubahan di Era Digital</h2>
+						<p>Kita hidup di masa di mana teknologi berkembang lebih cepat dari sebelumnya. Dunia digital membuka pintu ke berbagai kemungkinan baru — dari cara kita belajar, bekerja, hingga berkomunikasi. Inilah saatnya untuk tidak hanya menjadi penonton, tetapi juga bagian dari perubahan itu sendiri. Dengan memahami teknologi, kita bisa memanfaatkannya untuk menciptakan sesuatu yang lebih besar dan bermanfaat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Belajar dan Beradaptasi dengan Teknologi</h2>
+						<p>Teknologi bukan sesuatu yang harus ditakuti, tetapi dipelajari dan dijelajahi. Setiap aplikasi, sistem, dan platform digital menyimpan peluang besar bagi siapa pun yang mau mencoba. Belajar beradaptasi dengan perkembangan ini membuat kita lebih siap menghadapi tantangan zaman modern. Dunia digital akan terus berkembang — dan yang mampu mengikuti ritmenya akan menemukan banyak kesempatan berharga.</p>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Inovasi yang Mengubah Dunia</h2>
+						<p>Bayangkan bagaimana ide sederhana bisa berkembang menjadi sesuatu yang luar biasa berkat teknologi. Dari bisnis kecil yang tumbuh lewat media sosial, hingga karya kreatif yang bisa dikenal di seluruh dunia — semua terjadi karena inovasi digital. Dunia kini memberi ruang bagi siapa pun untuk berkreasi tanpa batas. Teknologi bukan hanya alat, tapi jembatan menuju masa depan yang penuh kemungkinan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Tantangan dan Peluang di Dunia Digital</h2>
+						<p>Setiap kemajuan pasti datang bersama tantangan. Di era digital, kita dihadapkan pada arus informasi yang deras dan perubahan yang cepat. Namun, di balik itu semua, ada peluang besar untuk berkembang dan berkontribusi. Dunia digital menunggu mereka yang berani mencoba, berpikir kreatif, dan menggunakan teknologi dengan bijak.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Teknologi Era</h2>
+						<div class="project-slider">
+							<div class="slider-container">
+							<div class="slider-slide">
+							<img src="/eradigital/Era Teknologi.jpg" alt="Dashboard App Main Interface">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Kuasi teknologi <br>buka peluang tanpa batas</h2>
+			<p>Made by Rezil Albuhori 2025</p>
+		</footer>
+	</body>
+	</html>
